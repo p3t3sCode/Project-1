@@ -1,0 +1,880 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: black;
+    margin: 0px 0px 5px -50px;
+    white-space: pre; /*recognises a space before b tags and fixes a problem of needing to use &nbsp; in card2 which was buggy*/
+}
+
+.map-titles {
+    color: black;
+    margin-bottom: 10px;
+}
+.map-titles:visited {
+    color: black;
+}
+.map-titles:hover {
+    color: blue;
+}
+
+/*-----------------------------------Start of Nav Header Settings-------------*/
+.head {
+    padding: 0;
+    min-width: 375px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    margin: 0 auto;
+}
+.nav-header ul {
+    display: flex;
+    min-width: min-content;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.booki img {
+    width: 80px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.nav-header-links {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    font-size: 1em;   
+    width: 187.5px;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+    color: #000000;
+    box-sizing: border-box;
+    border-top: 3px solid white;   
+}
+
+.nav-header-links:hover {
+    color: blue;
+    border-top: 3px solid blue;
+    transition: .1s ease, color;
+}
+
+h3.intro-text-position {
+    box-sizing: border-box;
+    width: 94%;
+    background-color: #ffffff;
+    padding: 20px 0 5px 0;
+    margin: 0 auto;
+    color: #000000;
+    font-weight: 700;
+}
+p.intro-text-position {
+    font-weight: 500;
+    width: 94%;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 14px;
+}
+
+/*-----------------------------------End of Nav Header Settings-------------*/
+
+/*-----------------------------------Start of Intro Text Settings-------------*/
+
+/*-----------------------------------End of Intro Text Settings-------------*/
+
+/*-----------------------------------Start of Search Bar Setting-------------*/
+.search-bar {
+    margin-bottom: 0%;
+}
+
+.search-form {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    height: 4em;
+    width: 94%;
+    margin: 0 auto;
+    align-items: center;
+}
+.search-input {
+    color: #000000;
+    font-weight: 400;
+}
+.search-form input:focus {
+    outline: none;
+}
+
+.b-map {
+    height: 2.4rem;
+    width: 40px;
+    background-color: #f2f2f2;
+    border-radius: 13px 0px 0px 13px;
+    border: none;
+}
+
+.b-map:hover {
+    cursor: pointer;
+}
+
+.search-input {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    height: 2.4rem;
+    width: 11rem;
+    padding-left: 0.8em;
+    border-left: 1px;
+    border-right: 1px;
+    border: 2px solid #f2f2f2;
+    border-right-color: transparent;
+    align-items: center;
+}
+
+.b-search {
+    font-family: 'Raleway', sans-serif;
+    height: 2.4rem;
+    width: 70px;
+    background-color: #0065fc;
+    color: #fcfeff;
+    font-weight: 700;
+    border-radius: 0px 13px 13px 0px;
+    border: none;
+    margin-left: -1px;
+}
+
+.b-search:hover {
+    cursor: pointer;
+}
+/*-----------------------------------End of Search Bar Setting-------------*/
+
+/*-----------------------------------Start of Filters Setting-------------*/
+.filter {
+    display: flex;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 10px 0 20px 0;
+}
+
+.position-filters {
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+.position-filters, .b-filter {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: 700;
+}
+
+.b-filter {
+    height: 2.6em;
+    border-radius: 20px;
+    padding: 0px 10px 0px 0px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    box-sizing: content-box;
+    border: 1px solid #ddeafe;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.b-filter:hover {
+    color: white;
+    background-color: #0065FC;
+}
+
+.blue-color {
+    display: inline-block;
+    height: 2.75em;
+    width: 2.75em;
+    color: #1769fc;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    padding: 11px 11px;
+    margin: 0 auto;
+    margin-left: -2px;
+    background-color: #ddeafe;
+}
+
+span.img-margin {
+    padding-left: 10px;
+    
+}
+/*-----------------------------------End of Filters Setting-------------*/
+
+/*-----------------------------------Start of Info Text Setting-------------*/
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 3.4em;
+    box-sizing: border-box;
+    width: 94%;
+    padding-top: 0%;
+    margin: 0 auto;
+}
+
+.info-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: black;
+    margin: 5px 0px 0px 10px;
+}
+
+i.info-icon {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 2px 0px 0px 2px;
+    color: #1769fc;
+    padding: 10px;
+    border: 2px solid #dddddd;
+}
+/*-----------------------------------End of Info Text Setting-------------*/
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--Start of Main Section Container Setting*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.main-section {
+    display: flex;
+    height: 600px;
+    width: 94%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.main-sec-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/*-----------------------------------Start of section one setting-------------*/
+.section-1 {
+    display: inline-block;
+    height: 100%;
+    width: 69%;
+    bottom: 0px;
+    left: 0px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 0 20px;
+    position: relative;
+    min-width: 347px;
+}
+
+.show-more  {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+}
+/*-----------------------------------End of section one setting-------------*/
+
+/*-----------------------------------Start of Accomodation Card Setting-------------*/
+.Acc {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 3%;
+}
+
+.Acc a {
+    display: flex;
+    flex-flow: column;
+}
+
+.Acc img {
+    height: 55%;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 22px 20px 0 0;
+    padding: 2px 0px 10px 8px;
+}
+
+.Acc .card-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    padding: 0% 5% 0 5%;
+    flex-flow: column;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.Acc .card-body h4 {
+    font-family: 'Raleway', sans-serif;
+    flex: 0 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    color: #1f1f1f;
+}
+
+.Acc .card-body p {
+    font-family: 'Raleway', sans-serif;
+    flex: 0 1 auto;
+    margin: 0;
+    font-size: 15px;
+    padding-left: 5px;
+}
+        
+h4 {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 5px;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 1px #dfdede;
+    background-color: white;
+}
+.card img {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 13px 13px 0 0;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 2px #bcbaba;
+}
+
+.card a {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.card p, .card .fa {
+    font-size: 15px;
+}
+.fa-star {
+    color: #dfdede;
+}
+.checked {
+    color: #0065FC;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+/*-----------------------------------End of Accomodation Card Setting-------------*/
+
+/*-----------------------------------Start of Section Two Setting-------------*/
+.section-2 {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 28%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 0 20px;
+    min-width: 347px;
+}
+
+.sec-2-title {
+    display: flex;
+}
+
+.black-star {
+    padding-top: 2.1em;
+    font-size: 1.2em;
+    -webkit-text-fill-color: black;
+}
+
+h3 {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+.img-1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.img-2 {
+    display: flex;
+    height: 180px;
+    flex-direction: row;   
+}
+/*-----------------------------------End of Section Two Setting-------------*/
+
+/*-----------------------------------Start of most popular card setting-------------*/
+.most-pop {
+    width: 300px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.most-pop a {
+    display: flex;
+    flex-flow: row;
+}
+
+.most-pop img {
+    height: 95%;
+    width: 38%;
+    object-fit: cover;
+    border-radius: 18px 0 0 18px;
+    padding: 0px 0px 0px 7px;
+}
+
+.most-pop .card2-body {
+    flex: 1 1 auto;
+    padding: 0% 4.4% 0 4.4%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.most-pop .card2-body h4 {
+    font-family: 'Raleway', sans-serif;
+    flex: 0 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    color: #1f1f1f;
+}
+
+.most-pop .card2-body p {
+    display: flex;
+    flex: 0 1 auto;
+    margin: 0;
+    font-size: 15px;
+    padding-left: 5px;
+}
+        
+h4 {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 5px;
+}
+        
+.sec2-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card2 {
+    display: inline-block;
+    border-radius: 16px;
+    box-shadow: 0 0 5px 1px #dfdede;
+    background-color: white;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.card2 img {
+    border-radius: 13px 0 0 13px;
+    height: 100%;
+    padding: 0;
+}
+.card2:hover {
+    box-shadow: 0 0 10px 2px #bcbaba;
+}
+
+.card2 a {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.card2 p, .card .fa {
+    font-size: 15px;
+}
+.fa-star {
+    color: #dfdede;
+}
+.checked {
+    color: #0065FC;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+/*-----------------------------------End of most popular card setting-------------*/
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*--End of Main Section Container Setting*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+/*------------------------------Start of Minor Section---------------------------------*/
+.minor-section {
+    width: 94%;
+    margin: 0 auto;
+}
+.minor-section h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 60px 0 10px 0;
+}
+.masonryholder {
+    display: flex;
+    flex-flow: column wrap;
+    height: 500px;
+    justify-content: space-between;
+    align-content: space-between;
+    min-width: 347px;
+}
+.masonryblocks {
+    display: flex;
+    flex-flow: column;
+    width: 22.5%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px #dfdede;
+    justify-content: space-between;
+}
+.masonryblocks:hover {
+    box-shadow: 0 0 10px 2px #bcbaba;
+}
+.masonryblocks:nth-child(1), .masonryblocks:nth-child(4) {
+    flex: 0 1 100%;
+}
+.masonryblocks:nth-child(2) {
+    flex: 0 1 60%
+}
+.masonryblocks:nth-child(3) {
+    flex: 0 1 30%;
+}
+.masonryblocks:nth-child(5), .masonryblocks:nth-child(6) {
+    flex: 0 1 45%;
+}
+.masonryholder h4 {
+    font-family: 'Raleway', sans-serif;
+    color: #1f1f1f;
+    padding: 20px;
+}
+.masonryblocks img {
+    flex: 1 1 0;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/*-------------------------------------End of Minor Section----------------------------*/
+
+/*-------------------------------------Start of Footer----------------------------*/
+.nav-footer {
+    display: flex;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    margin-top: 40px;
+    
+}
+
+.nav2 {
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+ul {
+    display: inline-block;
+    margin: 0;
+    padding-left: 5%;
+}
+
+.li-title a {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 1em;
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+.li-title a:hover {
+    color: #0065FC;
+}
+
+li {
+    display: flex;
+}
+
+li a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    color: #a0a0a0;
+    margin: 5px;
+    padding: 0;
+}
+li a:hover {
+    color: #0065FC;
+}
+/*-------------------------------------End of Footer----------------------------*/
+ 
+/*-------------------------------------Start of Media Queries*----------------------------*/
+@media screen and (max-width:767px){
+    body {
+        box-sizing: border-box;
+    }
+    .nav-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        min-width: 383px;
+    }
+    .nav-header ul {
+        display: flex;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-header ul li {
+        width: 50%;
+    }
+    .booki img {
+        margin-bottom: 20px;
+    }
+    a.nav-header-links {
+        flex: 1 0;
+        padding: 10px 5px;
+        border-top: none;
+        border-bottom: 5px solid white;
+        width: 50%;
+    }
+    .nav-header-links:hover {
+        border-top: none;
+        border-bottom: 5px solid blue;
+    }
+
+    .search-bar {
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 1em;
+        min-width: 374px;
+    }
+    .search-form {
+        width: 100%;
+        justify-content: center;
+    }
+    .b-map {
+        width: 50px;
+    }
+    .search-input {
+        width: inherit;
+    }
+    .b-search {
+        width: 50px;
+    }
+    .b-search i {
+        display: contents;
+    }
+    .b-search span {
+        display: none;
+    }
+    .filter .b-filter {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .position-filters {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .b-filter:nth-child(3), .b-filter:nth-child(5){
+        order: 2;
+    }
+    .b-filter:nth-child(4) { 
+        order: 1;
+    }
+    span.img-margin {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .info-text {
+        min-width: 269px;
+    }
+    .main-section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        border-radius: 0;
+        
+    }
+    .section-1 {
+        position: relative;
+        order: 2;
+        display: inline-block;
+        height: 1410px;
+        width: 100%;
+        min-width: 375px;
+        border-radius: 0;
+        background-color: white;
+    }
+    .card {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .card img{
+        width: 100%;
+    }
+    .show-more {
+        bottom: 0;
+        width: 320px;
+    }
+    .section-2 {
+        position: relative;
+        order: 1;
+        display: inline-block;
+        width: 100%;
+        min-width: 383px;
+        border-radius: 0;
+    }
+    .most-pop {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .card2 {
+        width: 100%;
+    }
+    .minor-section {
+        height: 100%;
+        margin-bottom: 40px;
+        width: 100%;
+        padding: 0 20px;
+        min-width: 383px;
+    }
+    .masonryholder{
+        height: 100%;
+        column-count: 1;
+        flex-flow: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .masonryblocks {
+        height: 200px;
+        width: 100%;
+        object-fit:inherit;
+        margin: 0 auto;
+        min-height: 200px;
+        /*min-width: 353.44;*/
+        width: 100%;
+    }
+
+    .nav-footer {
+        flex-flow: column;
+        margin-top: 0px;
+        white-space: nowrap;
+        width: 100%;
+        min-width: 383px;
+    }
+    .nav-footer .nav2 {
+        padding-bottom: 10px;
+        padding-left: 40px;
+    }
+  }
+
+@media only screen and (min-width: 768px)  and (max-width: 992px){
+    .b-search i {
+        display: none;
+    }
+    .main-section {
+        height: 1440px;
+    }
+    .section-1, .section-2 {
+        width: 48%;
+    }
+    .card {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 14px;
+        width: 100%;
+    }
+    .card2 {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1294px) {
+    .b-search i {
+        display: none;
+    }
+    .main-section {
+        height: 800px;
+    }
+    .section-1 {
+       width: 61%;      
+    }
+    .card {
+        width: 48%;
+    }
+    .section-2 {
+        width: 36%;      
+    }
+}
+
+@media only screen and (min-width: 1295px) {
+    .b-search i {
+        display: none;
+    }
+    .card {
+        width: 31%;
+    }
+}
+  
+/*-------------------------------------End of Media Queries*----------------------------*/
